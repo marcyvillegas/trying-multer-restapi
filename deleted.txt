@@ -1,0 +1,126 @@
+Here are the deleted line of codes from my previous work hahaha
+// const router = express.Router();
+const { application } = require('express');
+
+product.routes.js:
+//GETs back all the Product that have beem submitted
+// router.get('/', async (req, res) => { 
+//     try{
+//       const product = await Product.find(); //Product here is the model .find() is a method in mongodb that will return documents within the collection; you can set this.
+//       res.json(product);
+//     }catch(err){
+//       res.json({ message: err});
+//     }
+//   });
+
+// //SUBMITS a product using POST method
+// router.post('/', async (req, res) => {
+//     const post = new Product({
+//         Product_Type: req.body.Product_Type,
+//         Product_Name: req.body.Product_Name,
+//         Retail_Price: req.body.Retail_Price,
+//         Unit_Price: req.body.Unit_Price,
+//         Item_Sold: req.body.Item_Sold,
+//         stock: req.body.stock,
+//         // category: req.body.category,
+//         // indicator: res.body.indicator
+
+//    });
+
+//    try{
+//     const savedPost = await post.save()
+//         res.json(savedPost);
+      
+//     } catch(err){
+//         res.json({ message: err });
+//     }
+  
+  
+//   });
+
+indicator.routes.js:
+// //GETs back all the Indicator that have beem submitted
+// router.get('/', async (req, res) => { 
+//   try{
+//     const indicator = await Indicator.find(); //Indicator here is the model .find() is a method in mongodb that will return documents within the collection; you can set this.
+//     res.json(indicator);
+//   }catch(err){
+//     res.json({ message: err});
+//   }
+// });
+
+// //SUBMITS an using POST method
+// router.post('/', async (req, res) => {
+//   const post = new Indicator({
+//     Low_Stock_Indicator: req.body.Low_Stock_Indicator,
+//     High_Stock_Indicator: req.body.High_Stock_Indicator,
+//     New_Date_Indicator: req.body.New_Date_Indicator,
+//     // product: req.body.product,
+
+//     });
+
+//     try{
+//     const savedPost = await post.save()
+//         res.json(savedPost);
+      
+//     } catch(err){
+//         res.json({ message: err });
+//     }
+  
+  
+//   });
+
+
+category.routes.js:
+// //GETs back all the category that have beem submitted
+// router.get('/', async (req, res) => { 
+//   try{
+//     const category = await Category.find(); //Category here is the model .find() is a method in mongodb that will return documents within the collection; you can set this.
+//     res.json(category);
+//   }catch(err){
+//     res.json({ message: err});
+//   }
+// });
+
+// //SUBMITS a category using POST method
+// router.post('/', async (req, res) => {
+//   const post = new Category({
+//     Category_Name: req.body.Category_Name,
+//     // product: req.body.product
+
+//     });
+
+//     try{
+//     const savedPost = await post.save()
+//         res.json(savedPost);
+      
+//     } catch(err){
+//         res.json({ message: err });
+//     }
+  
+  
+//   });
+
+// //specific post
+// // router.get('/:categoryId', aysnc (req, res) => {
+// //  const post = await Category.findById(req.params.categoryId)
+// // });
+
+// // router.delete('')
+
+
+PRODUCT:
+"Product_Type": "this is the Product_Type",
+"Product_Name":"iphone 13",
+"Retail_Price": 45000,
+"Unit_Price": 52000,
+"Item_Sold": 101,
+"stock": 51   
+
+INDICATOR:
+"Low_Stock_Indicator": 15,
+"High_Stock_Indicator": 50,
+"New_Date_Indicator": 1
+
+CATEGORY:
+"Category_Name":
